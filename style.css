@@ -24,6 +24,54 @@ header {
     margin-bottom: 10px;
 }
 
+/* Style for the main navigation */
+
+
+.main-nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the main link (About) */
+.main-nav .dropdown > a {
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Style for dropdown content */
+.main-nav .dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color:  rgb(255, 255, 255);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 2px;
+}
+
+/* Links inside dropdown */
+.main-nav .dropdown-content a {
+    color:  rgb(8, 67, 86);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect for dropdown links */
+.main-nav .dropdown-content a:hover {
+    background-color: #1A2A3A; /* Darker shade on hover */
+    color: white;
+}
+
+/* Show dropdown on hover */
+.main-nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 .main-nav {
     background-color: rgb(8, 67, 86); 
     display: flex;
@@ -31,7 +79,8 @@ header {
     gap: 25px;
     margin-top: 20px;
     padding: 10px;
-    width: 100%; 
+    width: 100%;
+    text-align: center;
 }
 
 .main-nav a {
@@ -52,6 +101,8 @@ header {
 }
 
 
+
+/* underline */
 .main-nav a {
     text-decoration: none;
     position: relative;
@@ -69,8 +120,7 @@ header {
     transition: transform 0.3s ease;
 }
 .main-nav a:hover::after {
-    transform: scaleX(1);
-}
+    transform: scaleX(1);}
 
 
 
