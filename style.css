@@ -1,0 +1,206 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo-container .logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.main-nav {
+    background-color: rgb(8, 67, 86); 
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%; 
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.main-nav .campus-btn, .main-nav  {
+    background-color: rgb(8, 67, 86);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.main-nav a {
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+}
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.main-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+.campus-btn:hover{
+    /* height: 47px ;
+    width: 94.54px; */
+    background-color:rgb(8, 67, 86); /* Alpha Channel : colour visibility*/
+    /* transition-duration : 0.5s; */
+    background-color: rgb(119, 119, 208); 
+}
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+/* Container for the entire gallery */
+.gallery-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 20px 0;
+}
+
+/* Animation for scrolling effect */
+.gallery-track {
+    display: inline-flex;
+    animation: scroll 30s linear infinite;
+}
+
+/* Style for each image in the gallery */
+.gallery-item {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 150px;
+    margin: 0 5px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Keyframes for the seamless scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/* footer */
+/* Footer CSS */
+footer {
+    background-color: rgb(8, 67, 86);  /* Black background like image 1 */
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #d9a760;  /* Gold color for headings */
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    /* color: #d9a760; */
+    text-decoration: underline;
+}
+
+
+.contact-info p, .footer-bottom p {
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #d9a760;
+}
+
