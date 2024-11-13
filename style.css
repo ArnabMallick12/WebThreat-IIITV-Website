@@ -1,105 +1,111 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
 }
 
-header {
+.header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: #fff;
     padding: 20px;
+    background-color: white;
     border-bottom: 2px solid #ddd;
 }
 
-.logo-container .logo {
-    width: 100px;
-    margin-bottom: 10px;
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
-/* Style for the main navigation */
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
 
+.title h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #000;
+}
 
-.main-nav .dropdown {
+.title p {
+    margin: 0;
+    color: #333;
+    font-size: 1em;
+}
+
+/* dropdown , diu and convocation */
+.dropdown {
     position: relative;
     display: inline-block;
 }
-
-/* Style for the main link (About) */
-.main-nav .dropdown > a {
+.dropbtn {
+    background-color: #000000;
     color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-/* Style for dropdown content */
-.main-nav .dropdown-content {
-    display: none; /* Hidden by default */
-    position: absolute;
-    background-color:  rgb(255, 255, 255);
-    min-width: 200px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    margin-top: 2px;
-}
-
-/* Links inside dropdown */
-.main-nav .dropdown-content a {
-    color:  rgb(8, 67, 86);
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Hover effect for dropdown links */
-.main-nav .dropdown-content a:hover {
-    background-color: #1A2A3A; /* Darker shade on hover */
-    color: white;
-}
-
-/* Show dropdown on hover */
-.main-nav .dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-.main-nav {
-    background-color: rgb(8, 67, 86); 
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 20px;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-.main-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-
-.main-nav .campus-btn, .main-nav  {
-    background-color: rgb(8, 67, 86);
-    color: #fff;
     border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.show {
+    display: block;
+}
+
+
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #293c74;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
     cursor: pointer;
 }
 
+.main-nav {
+
+    display: flex;
+    justify-content: center;
+    background-color: #cfb991;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.main-nav a {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+}
 
 
 /* underline */
@@ -115,27 +121,12 @@ header {
     right: 0;
     bottom: 0;
     height: 2px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 .main-nav a:hover::after {
     transform: scaleX(1);}
-
-
-
-.campus-btn:hover{
-    /* height: 47px ;
-    width: 94.54px; */
-    background-color:rgb(8, 67, 86); /* Alpha Channel : colour visibility*/
-    /* transition-duration : 0.5s; */
-    background-color: rgb(119, 119, 208); 
-}
-.content {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
 
 
 
@@ -184,7 +175,15 @@ header {
 
 
 
-/* footer */
+
+
+
+
+
+
+    
+
+    /* footer */
 /* Footer CSS */
 footer {
     background-color: rgb(8, 67, 86);  /* Black background like image 1 */

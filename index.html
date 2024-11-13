@@ -3,200 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IIIT Vadodara</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>IIIT Vadodara Header</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo-container">
-            <img src="gallery/iiitv_logo.png" alt="IIIT Vadodara Logo" class="logo">
-            <h1>Indian Institute of Information Technology Vadodara</h1>
-            <p>भारतीय सूचना प्रौद्योगिकी संस्थान वडोदरा</p>
-            <link rel="stylesheet" href="style.css">
+            <img src="iiit-logo.png" alt="IIIT Vadodara Logo" class="logo">
+            <div class="title">
+                <h1>Indian Institute of Information Technology Vadodara</h1>
+                <p>भारतीय सूचना प्रौद्योगिकी संस्थान वडोदरा</p>
+            </div>
         </div>
-        <!-- <nav class="main-nav">
-            
-            <a href="#">About</a>
-            <a href="#">Academics</a>
-            <a href="#">Admission</a>
-            <a href="#">Research</a>
-            <a href="#">People</a>
-            <a href="#">Students Corner</a>
-            <a href="#">Jobs</a>
-            <a href="#">Tenders</a>
-            
-        </nav> -->
 
-        <nav class="main-nav">
-            <div class="dropdown">
-                <a href="#">About</a>
-                <div class="dropdown-content">
-                    <a href="About/1_Institute.html">Institute</a>
-                    <a href="vision.html">Vision & Mission</a>
-                    <a href="director.html">Director</a>
-                    <a href="governance.html">Governance</a>
-                    <a href="act.html">Act, Statutes and Ordinance</a>
-                    <a href="statement.html">Statement & Reports</a>
-                    <a href="annual-reports.html">Annual Reports</a>
-                    <a href="master-plan.html">Dumad Campus Master Plan</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="policies.html">Policies</a>
-                </div>
+        <div class="dropdown">
+            <button class="dropbtn">▼</button>
+            <div class="dropdown-content">
+                <a href="#">DIU Campus</a>
+                <a href="#">Convocation 2024</a>
             </div>
-            <div class="dropdown">
-                <a href="#">Academics</a>
-                <div class="dropdown-content">
-                <a href="About/1_Institute.html">Institute</a>
-            </div>
-            </div>
-            
-            <div class="dropdown">
-                <a href="#">Admission</a>
-                <div class="dropdown-content">
-                <a href="About/1_Institute.html">Institute</a>
-            </div>
-            </div>
-
-            <div class="dropdown">
-                <a href="#">Research</a>
-                <div class="dropdown-content">
-                <a href="About/1_Institute.html">Institute</a>
-            </div>
-            </div>
-
-            <div class="dropdown">
-                <a href="#">People</a>
-                <div class="dropdown-content">
-                <a href="About/1_Institute.html">Institute</a>
-            </div>
-            </div>
-
-            <div class="dropdown">
-                <a href="#">Students Corner</a>
-                <div class="dropdown-content">
-                <a href="About/1_Institute.html">Institute</a>
-            </div>
-            </div>
-
-            <div class="dropdown">
-                <a href="#">Jobs</a>
-                <div class="dropdown-content">
-                <a href="About/1_Institute.html">Institute</a>
-            </div>
-            </div>
-
-            <div class="dropdown">
-                <a href="#">Tenders</a>
-                <div class="dropdown-content">
-                <a href="About/1_Institute.html">Institute</a>
-            </div>
-            </div>
-            
-        </nav>
-        
-
-        <button class="campus-btn">DIU Campus</button>
-        <button class="campus-btn">Convocation 2024</button>
-            
+        </div>
     </header>
 
-    <main>
-            <!-- Gallery Container -->
-    <div class="gallery-container">
-        <div class="gallery-track">
-            <!-- First set of images -->
-            <div class="gallery-item"><img src="gallery/Campus.webp" alt="Image 1"></div>
-            <div class="gallery-item"><img src="gallery/classroom.jpg" alt="Image 2"></div>
-            <div class="gallery-item"><img src="gallery/view.jpeg" alt="Image 6"></div>
-            <div class="gallery-item"><img src="gallery/robot.jpg" alt="Image 3"></div>
-            <div class="gallery-item"><img src="gallery/images.jpeg" alt="Image 4"></div>
-            <div class="gallery-item"><img src="gallery/moodindigo.jpeg" alt="Image 5"></div>
-            <div class="gallery-item"><img src="gallery/work.jpg" alt="Image 6"></div>
+   
 
-            <!-- Duplicate set of images for continuous scrolling -->
-            <div class="gallery-item"><img src="gallery/Campus.webp" alt="Image 1"></div>
-            <div class="gallery-item"><img src="gallery/classroom.jpg" alt="Image 2"></div>
-            <div class="gallery-item"><img src="gallery/view.jpeg" alt="Image 6"></div>
-            <div class="gallery-item"><img src="gallery/robot.jpg" alt="Image 3"></div>
-            <div class="gallery-item"><img src="gallery/images.jpeg" alt="Image 4"></div>
-            <div class="gallery-item"><img src="gallery/moodindigo.jpeg" alt="Image 5"></div>
-            <div class="gallery-item"><img src="gallery/work.jpg" alt="Image 6"></div>
+    <nav class="main-nav">
+        <a href="#">About</a>
+        <a href="#">Academics</a>
+        <a href="#">Admission</a>
+        <a href="#">Research</a>
+        <a href="#">People</a>
+        <a href="#">Students Corner</a>
+        <a href="#">Jobs</a>
+        <a href="#">Tenders</a>
+    </nav>
+
+<!-- dropdown of diu and Convocation -->
+    <script>
+        // Toggle dropdown visibility on button click
+        document.querySelector(".dropbtn").addEventListener("click", function() {
+            const dropdownContent = document.querySelector(".dropdown-content");
+            dropdownContent.classList.toggle("show");
+        });
+
+        // Close the dropdown if clicked outside
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                const dropdowns = document.getElementsByClassName("dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+<div class="gallery-container">
+    <div class="gallery-track">
+        <!-- First set of images -->
+        <div class="gallery-item"><img src="gallery/Campus.webp" alt="Image 1"></div>
+        <div class="gallery-item"><img src="gallery/classroom.jpg" alt="Image 2"></div>
+        <div class="gallery-item"><img src="gallery/view.jpeg" alt="Image 6"></div>
+        <div class="gallery-item"><img src="gallery/robot.jpg" alt="Image 3"></div>
+        <div class="gallery-item"><img src="gallery/images.jpeg" alt="Image 4"></div>
+        <div class="gallery-item"><img src="gallery/moodindigo.jpeg" alt="Image 5"></div>
+        <div class="gallery-item"><img src="gallery/work.jpg" alt="Image 6"></div>
+
+        <!-- Duplicate set of images for continuous scrolling -->
+        <div class="gallery-item"><img src="gallery/Campus.webp" alt="Image 1"></div>
+        <div class="gallery-item"><img src="gallery/classroom.jpg" alt="Image 2"></div>
+        <div class="gallery-item"><img src="gallery/view.jpeg" alt="Image 6"></div>
+        <div class="gallery-item"><img src="gallery/robot.jpg" alt="Image 3"></div>
+        <div class="gallery-item"><img src="gallery/images.jpeg" alt="Image 4"></div>
+        <div class="gallery-item"><img src="gallery/moodindigo.jpeg" alt="Image 5"></div>
+        <div class="gallery-item"><img src="gallery/work.jpg" alt="Image 6"></div>
+    </div>
+
+</div>
+
+
+
+<!-- footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section important-links">
+            <h3>Important Links</h3>
+            <ul>
+                <li><a href="#">Tender</a></li>
+                <li><a href="#">RTI</a></li>
+                <li><a href="#">Vigilance</a></li>
+                <li><a href="#">Placement</a></li>
+                <li><a href="#">Hostel</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section academic-links">
+            <h3>Useful Academic Links</h3>
+            <ul>
+                <li><a href="#">SWAYAM</a></li>
+                <li><a href="#">SWAYAM Prabha</a></li>
+                <li><a href="#">e-Yantra</a></li>
+                <li><a href="#">Virtual Labs</a></li>
+                <li><a href="#">FOSSEE</a></li>
+                <li><a href="#">Spoken Tutorial</a></li>
+                <li><a href="#">NDLI | e-SS</a></li>
+                <li><a href="#">PDS | IRINS</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section resources">
+            <h3>E-Resources</h3>
+            <ul>
+                <li><a href="#">Moodle</a></li>
+                <li><a href="#">NPTEL@IIITV</a></li>
+                <li><a href="#">Matlab Online</a></li>
+                <li><a href="#">Library Catalogue OPAC</a></li>
+                <li><a href="#">Shodhganga | NDL</a></li>
+                <li><a href="#">World eBook Library</a></li>
+                <li><a href="#">Open Access Journals</a></li>
+                <li><a href="#">Paramshavak</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section-contact-info">
+            <p>
+                C/O Block No. 9<br>
+                Government Engineering College<br>
+                Sector-28, Gandhinagar<br>
+                Gujarat - 382028<br>
+                Email: <a href="mailto:administration@iiitvadodara.ac.in">administration@iiitvadodara.ac.in</a><br>
+                Phone: +91-79-29750281, +91-8849303883
+            </p>
         </div>
     </div>
 
 
 
-    
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section important-links">
-                <h3>Important Links</h3>
-                <ul>
-                    <li><a href="#">Tender</a></li>
-                    <li><a href="#">RTI</a></li>
-                    <li><a href="#">Vigilance</a></li>
-                    <li><a href="#">Placement</a></li>
-                    <li><a href="#">Hostel</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">FAQs</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-section academic-links">
-                <h3>Useful Academic Links</h3>
-                <ul>
-                    <li><a href="#">SWAYAM</a></li>
-                    <li><a href="#">SWAYAM Prabha</a></li>
-                    <li><a href="#">e-Yantra</a></li>
-                    <li><a href="#">Virtual Labs</a></li>
-                    <li><a href="#">FOSSEE</a></li>
-                    <li><a href="#">Spoken Tutorial</a></li>
-                    <li><a href="#">NDLI | e-SS</a></li>
-                    <li><a href="#">PDS | IRINS</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-section resources">
-                <h3>E-Resources</h3>
-                <ul>
-                    <li><a href="#">Moodle</a></li>
-                    <li><a href="#">NPTEL@IIITV</a></li>
-                    <li><a href="#">Matlab Online</a></li>
-                    <li><a href="#">Library Catalogue OPAC</a></li>
-                    <li><a href="#">Shodhganga | NDL</a></li>
-                    <li><a href="#">World eBook Library</a></li>
-                    <li><a href="#">Open Access Journals</a></li>
-                    <li><a href="#">Paramshavak</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-section-contact-info">
-                <p>
-                    C/O Block No. 9<br>
-                    Government Engineering College<br>
-                    Sector-28, Gandhinagar<br>
-                    Gujarat - 382028<br>
-                    Email: <a href="mailto:administration@iiitvadodara.ac.in">administration@iiitvadodara.ac.in</a><br>
-                    Phone: +91-79-29750281, +91-8849303883
-                </p>
-            </div>
+    <div class="footer-bottom">
+        <p>&copy; Copyright 2024 Indian Institute of Information Technology Vadodara - All Rights Reserved</p>
+        <div class="footer-social">
+            <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
+    </div>
     
+</footer>
 
 
-        <div class="footer-bottom">
-            <p>&copy; Copyright 2024 Indian Institute of Information Technology Vadodara - All Rights Reserved</p>
-            <div class="footer-social">
-                <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-        
-    </footer>
-       
-    </main>
 </body>
 </html>
-
