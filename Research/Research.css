@@ -1,0 +1,101 @@
+/* Basic styling for the slider container */
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Slider styling */
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Slide styling */
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .slide img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  /* Text overlay */
+  .text-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 70%;
+  }
+  
+  .text-overlay h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .text-overlay p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  .read-more-btn {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Navigation buttons */
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .nav-button.left {
+    left: 10px;
+  }
+  
+  .nav-button.right {
+    right: 10px;
+  }
+  
+  /* Dots */
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+  

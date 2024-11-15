@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Background Image and Title */
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url('your-background-image.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.title h1 strong {
+    font-size: 3rem;
+    color: #e5e5e5;
+}
+
+.title h2 {
+    font-size: 1.5rem;
+}
+
+/* Information Blocks Container */
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin-top: -50px;
+}
+
+.info-block {
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.info-block:hover {
+    transform: translateY(-5px);
+}
+
+.undergraduate {
+    background-color: #a4cf25;
+}
+
+.graduate {
+    background-color: #00b0b9;
+}
+
+.research {
+    background-color: #f39200;
+}
+
+.global {
+    background-color: #d85d2a;
+}
+
+.info-block h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-block p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.info-block .cta {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Footer CSS */
+/* 
+footer {
+    background-color: rgb(0, 0, 0);  //Black background like image 1 
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #d9a760;  // Gold color for headings 
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    // color: #d9a760; 
+    text-decoration: underline;
+}
+
+
+.contact-info p, .footer-bottom p {
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #d9a760;
+}
+*/
