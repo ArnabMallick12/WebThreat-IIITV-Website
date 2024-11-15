@@ -193,49 +193,119 @@ body {
 
 
 /* main content  */
-.row{
+
+/* Announcement section  */
+.announcement-section {
+    width: 85%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #cfb991;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .announcement-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #000000; 
+  }
+  
+  .announcement-card {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5%;
-    margin-bottom:2% ;
-}
-.green{
-    margin: 2%;
-    height: 200px;
-    width: 350px;
-    background-color: rgb(40, 226, 40);
-}
-
-.red{
-    margin: 2%;
-    height: 200px;
-    width: 250px;
-    background-color: rgb(226, 40, 40);
-}
-
-.yellow{
-    margin: 2%;
-    height: 200px;
-    width: 450px;
-    background-color: rgb(226, 176, 40);
-}
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .announcement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .announcement-content h3 {
+    font-size: 22px;
+    color: #000000; 
+    margin: 0;
+  }
+  
+  .announcement-date {
+    font-size: 14px;
+    color: #6d5b4b; 
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .announcement-details {
+    font-size: 16px;
+    color: #4b3d2a; 
+  }
+  
+  .announcement-arrow {
+      margin-left: auto;
+    }
+    
+    .announcement-arrow a {
+      text-decoration: none;
+      color: #4b3d2a;
+      font-size: 20px;
+      transition: color 0.2s;
+    }
+    
+    .announcement-arrow a:hover {
+      color: #6d5b4b;
+    }
+  
+  @media (max-width: 600px) {
+    .announcement-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .announcement-icon {
+      margin-bottom: 10px;
+    }
+  }
 
 /* animation */
 .block{
-    animation: appear ease-in;
+    animation: appear ease;
     animation-timeline: view();
-    animation-range: entry 0;
+    animation-range: entry 0% cover 30%;
+}
+
+.text-animation{
+    animation: appear-text ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 @keyframes appear {
-    from{
+    from{   
         opacity: 0;
         scale: 0.5;
     }
     to{
         opacity: 1;
         scale: 1;
+    }
+}
+
+@keyframes appear-text {
+    from{   
+        opacity: 0;
+        transform: translateY(80px);
+        /* scale: 0.8; */
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        /* scale: 1; */
     }
 }
 
