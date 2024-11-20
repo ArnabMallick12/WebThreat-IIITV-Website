@@ -12,7 +12,7 @@
     <div class="slider" id="slider">
       <!-- Slide 1 -->
       <div class="slide">
-        <img src="gallery/robot.jpg" alt="Slide 1">
+        <img src="../gallery/robot.jpg" alt="Slide 1">
         <div class="text-overlay">
           <h2>Purdue Applied Research Institute opens $41M Hypersonics and Applied Research Facility on campus</h2>
           <p>The 65,000-square-foot building is home to two cutting-edge wind tunnels...</p>
@@ -21,7 +21,7 @@
       </div>
       <!-- Slide 2 -->
       <div class="slide">
-        <img src="gallery/Campus.webp" alt="Slide 2">
+        <img src="../gallery/Campus.webp" alt="Slide 2">
         <div class="text-overlay">
           <h2>Another Research Facility</h2>
           <p>Description of the second research facility...</p>
@@ -40,40 +40,8 @@
     <span class="dot" onclick="currentSlide(0)"></span>
     <span class="dot" onclick="currentSlide(1)"></span>
   </div>
+<script src="Research.js"></script>
 
-  <script>
-    let currentIndex = 0;
-
-    function showSlide(index) {
-      const slides = document.getElementById('slider');
-      const dots = document.querySelectorAll('.dot');
-      if (index >= slides.children.length) {
-        currentIndex = 0;
-      } else if (index < 0) {
-        currentIndex = slides.children.length - 1;
-      } else {
-        currentIndex = index;
-      }
-
-      // Slide transition
-      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-      // Active dot
-      dots.forEach(dot => dot.classList.remove('active'));
-      dots[currentIndex].classList.add('active');
-    }
-
-    function moveSlide(n) {
-      showSlide(currentIndex + n);
-    }
-
-    function currentSlide(n) {
-      showSlide(n);
-    }
-
-    // Initial slide
-    showSlide(currentIndex);
-  </script>
-
+  
 </body>
 </html>
