@@ -1,0 +1,179 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+/* Admission Banner */
+.admission-banner {
+    background: linear-gradient(45deg, #cc9b41, #d9a760);
+    padding: 120px 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #e0ba83; /* Gold border at the bottom */
+}
+
+/* Pulse Animation */
+.admission-banner::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+/* Title and Content Styling */
+.admission-banner h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    animation: fadeInUp 1s ease-out;
+    animation-delay: 0.2s;
+}
+
+.admission-banner p {
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.911);
+    animation: fadeInUp 1s ease-out;
+    animation-delay: 0.5s;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
+/* Call to Action Button Styling */
+.cta-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
+    background-color: #cc9b41;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1;
+}
+
+.cta-btn:hover {
+    background-color: #000000;
+    transform: translateY(-5px);
+    color: white;
+}
+
+.admission-banner .banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/* Admissions Information */
+.admissions-info {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.info-column {
+    width: 48%;
+}
+
+/* Info Cards */
+.info-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.info-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.info-card p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.info-card .btn {
+    background-color: #d9a760;
+    color: #000000;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.info-card .btn:hover {
+    background-color: #000000;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Hover Effect on Cards */
+.info-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
