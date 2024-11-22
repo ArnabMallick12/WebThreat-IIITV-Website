@@ -7,6 +7,7 @@ body {
 }
 
 .header {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,10 +56,16 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
+    right: 0%;
+    /* bottom: 100%; */
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 10000;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(-10px); /* Slide up initially */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and slide */
+    pointer-events: none; /* Prevent interaction when hidden */
 }
 .dropdown-content a {
     color: black;
@@ -68,6 +75,19 @@ body {
 }
 .dropdown-content a:hover {
     background-color: #f1f1f1;
+    
+}
+
+.dropdown.active .dropdown-content{
+  opacity: 1; /* Show on hover */
+  transform: translateY(0); /* Slide into place */
+  pointer-events: auto; /* Enable interaction */
+
+}
+.active{
+  opacity: 1; /* Show on hover */
+  transform: translateY(0); /* Slide into place */
+  pointer-events: auto; /* Enable interaction */
 }
 .show {
     display: block;
@@ -99,12 +119,15 @@ body {
 }
 
 .main-nav {
-
+  position: sticky;
+  /* overflow: hidden; */
+  top: 0;
     display: flex;
     justify-content: center;
     background-color: #cfb991;
     font-weight: bold;
     padding: 10px 0;
+    z-index: 999;
 }
 
 .main-nav a {
@@ -337,7 +360,8 @@ body {
     align-items: center;
     height: 40vh;
     margin: 10em;
-    margin-top: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
   
   .card__container {

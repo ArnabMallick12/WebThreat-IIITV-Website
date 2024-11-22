@@ -37,8 +37,8 @@
 
     <nav class="main-nav">
         <a href="about/About.html">About</a>
-        <a href="#">Academics</a>
-        <a href="#">Admission</a>
+        <a href="Academics/academics.html">Academics</a>
+        <a href="Admissions/admission.html">Admission</a>
         <a href="Research/Research.html">Research</a>
         <a href="#">People</a>
         <a href="Students Corner/studentCorner.html">Students Corner</a>
@@ -46,27 +46,7 @@
         <a href="#">Tenders</a>
     </nav>
 
-<!-- dropdown of diu and Convocation -->
-    <script>
-        // Toggle dropdown visibility on button click
-        document.querySelector(".dropbtn").addEventListener("click", function() {
-            const dropdownContent = document.querySelector(".dropdown-content");
-            dropdownContent.classList.toggle("show");
-        });
 
-        // Close the dropdown if clicked outside
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                const dropdowns = document.getElementsByClassName("dropdown-content");
-                for (let i = 0; i < dropdowns.length; i++) {
-                    const openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
 <div class="gallery-slider">
 <div class="gallery-container">
     <div class="gallery-track1">
@@ -180,8 +160,8 @@
 <div class="latest-news">
     <h1 class="text-animation">Latest News</h1>
     <section class="container">
-      <div class="card__container swiper block">
-         <div class="card__content">
+      <div class=" card__container swiper block">
+         <div class="card__content_ln card__content">
             <div class="swiper-wrapper">
                <article class="card__article swiper-slide">
                   <div class="card__image">
@@ -287,11 +267,11 @@
           </div>
 
          <!-- Navigation buttons -->
-         <div class="swiper-button-next">
+         <div class="swiper-button-next ln-next">
             <i class="ri-arrow-right-s-line"></i>
          </div>
          
-         <div class="swiper-button-prev">
+         <div class="swiper-button-prev ln-prev">
             <i class="ri-arrow-left-s-line"></i>
          </div>
 
@@ -299,6 +279,7 @@
          <div class="swiper-pagination"></div>
       </div>
    </section>
+   <button class="btn">More</button>
   </div>
 
 <!-- Event Calendar    -->
@@ -306,7 +287,7 @@
     <h1 class="text-animation">Event Calendar</h1>
     <section class="container">
       <div class="card__container swiper block">
-         <div class="card__content">
+         <div class="card__content card__content_ec">
             <div class="swiper-wrapper">
                <article class="card__article swiper-slide">
                   <!-- <div class="card__image">
@@ -411,27 +392,28 @@
             </div>
           </div>
 
-         <!-- Navigation buttons -->
-         <div class="swiper-button-next">
-            <i class="ri-arrow-right-s-line"></i>
+          <!-- Navigation buttons -->
+          <div class="swiper-button-next ec-next">
+             <i class="ri-arrow-right-s-line"></i>
+            </div>
+            
+            <div class="swiper-button-prev ec-prev">
+               <i class="ri-arrow-left-s-line"></i>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
          </div>
-         
-         <div class="swiper-button-prev">
-            <i class="ri-arrow-left-s-line"></i>
-         </div>
-
-         <!-- Pagination -->
-         <div class="swiper-pagination"></div>
-      </div>
-   </section>
-  </div>
+      </section>
+      <button class="btn">More</button>
+   </div>
 
   <!-- Research-Higlights  -->
 <div class="latest-news">
     <h1 class="text-animation">Research Higlights</h1>
     <section class="container">
       <div class="card__container swiper block">
-         <div class="card__content">
+         <div class="card__content card__content_rh">
             <div class="swiper-wrapper">
                <article class="card__article swiper-slide">
                   <div class="card__image">
@@ -537,11 +519,11 @@
           </div>
 
          <!-- Navigation buttons -->
-         <div class="swiper-button-next">
+         <div class="swiper-button-next rh-next">
             <i class="ri-arrow-right-s-line"></i>
          </div>
          
-         <div class="swiper-button-prev">
+         <div class="swiper-button-prev rh-prev">
             <i class="ri-arrow-left-s-line"></i>
          </div>
 
@@ -549,6 +531,7 @@
          <div class="swiper-pagination"></div>
       </div>
    </section>
+   <button class="btn">More</button>
   </div>
 
 
