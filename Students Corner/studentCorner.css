@@ -2,17 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: white;
-    border-bottom: 2px solid #ddd;
-}
+
 
 .logo-container {
     display: flex;

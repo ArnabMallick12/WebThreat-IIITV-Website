@@ -5,18 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Students Corner</title>
     <link rel="stylesheet" href="studentCorner.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
     <header class="header">
         <div class="logo-container">
-            <img src="../gallery/iiit-logo.png" alt="IIIT Vadodara Logo" class="logo">
+            <a href="../index.html"><img src="../gallery/iiit-logo.png" alt="IIIT Vadodara Logo" class="logo"></a>
             <div class="title">
                 <h1>Indian Institute of Information Technology Vadodara</h1>
                 <p>भारतीय सूचना प्रौद्योगिकी संस्थान वडोदरा</p>
             </div>
         </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">▼</button>
+            <div class="dropdown-content">
+                <a href="#">DIU Campus</a>
+                <a href="#">Convocation 2024</a>
+            </div>
+        </div>
     </header>
+
+   
+
+    <nav class="main-nav">
+        <a href="../about/About.html">About</a>
+        <a href="../Academics/academics.html">Academics</a>
+        <a href="../Admissions/admission.html">Admission</a>
+        <a href="../Research/Research.html">Research</a>
+        <a href="#">People</a>
+        <a href="studentCorner.html">Students Corner</a>
+        <a href="#">Jobs</a>
+        <a href="#">Tenders</a>
+    </nav>
         <!-- <div class="dropdown">
             <button class="dropbtn">▼</button>
             <div class="dropdown-content">
@@ -29,7 +51,7 @@
 
 
     <div class="card-container">
-        <div class="card">
+        <div class="card block">
             <img src="../gallery/Placement.jpg" alt="Placement">
             <div class="card-content">
                 <h2>Placement</h2>
@@ -38,7 +60,7 @@
             <span class="arrow">&rarr;</span>
         </div>
         
-        <div class="card">
+        <div class="card block">
             <img src="../gallery/Library.jpg" alt="Library">
             <div class="card-content">
                 <h2>Library</h2>
@@ -47,7 +69,7 @@
             <span class="arrow">&rarr;</span>
         </div>
         
-        <div class="card">
+        <div class="card block">
             <img src="../gallery/Hostel.jpg" alt="Hostel">
             <div class="card-content">
                 <h2>Hostel</h2>
@@ -56,7 +78,7 @@
             <span class="arrow">&rarr;</span>
         </div>
         
-        <div class="card">
+        <div class="card block">
             <img src="../gallery/Gymkahan.jpg" alt="Gymkhana">
             <div class="card-content">
                 <h2>Gymkhana</h2>
@@ -64,35 +86,35 @@
             </div>
             <span class="arrow">&rarr;</span>
         </div>
-        <div class="card">
+        <div class="card block">
             <img src="../gallery/Constitution.jpg" alt="Gymkhana Constitution">
             <div class="card-content">
                 <h2>Gymkhana Constitution</h2>
                 <p>cnjdncj</p>
             </div>
             <span class="arrow">&rarr;</span>
-        </div><div class="card">
+        </div><div class="card block">
             <img src="../gallery/E-Resource.jpg" alt="E-Resources">
             <div class="card-content">
                 <h2>E-Resources</h2>
                 <p>cnjdncj</p>
             </div>
             <span class="arrow">&rarr;</span>
-        </div><div class="card">
+        </div><div class="card block">
             <img src="../gallery/alumini.jpg" alt="Alumni">
             <div class="card-content">
                 <h2>Alumni</h2>
                 <p>cnjdncj</p>
             </div>
             <span class="arrow">&rarr;</span>
-        </div><div class="card">
+        </div><div class="card block">
             <img src="../gallery/NoRagging.webp" alt="Anti-Ragging Compliance">
             <div class="card-content">
                 <h2>Anti-Ragging Compliance</h2>
                 <p>cnjdncj</p>
             </div>
             <span class="arrow">&rarr;</span>
-        </div><div class="card">
+        </div><div class="card block">
             <img src="../gallery/Notice.png" alt="Notices">
             <div class="card-content">
                 <h2>Notices</h2>
@@ -104,10 +126,10 @@
     </div>
 
 
-    <!-- footer -->
+   <!-- footer -->
 <footer>
     <div class="footer-content">
-        <div class="footer-section important-links">
+        <div class="footer-section important-links text-animation">
             <h3>Important Links</h3>
             <ul>
                 <li><a href="#">Tender</a></li>
@@ -120,7 +142,7 @@
             </ul>
         </div>
 
-        <div class="footer-section academic-links">
+        <div class="footer-section academic-links text-animation">
             <h3>Useful Academic Links</h3>
             <ul>
                 <li><a href="#">SWAYAM</a></li>
@@ -134,7 +156,7 @@
             </ul>
         </div>
 
-        <div class="footer-section resources">
+        <div class="footer-section resources text-animation">
             <h3>E-Resources</h3>
             <ul>
                 <li><a href="#">Moodle</a></li>
@@ -148,7 +170,7 @@
             </ul>
         </div>
 
-        <div class="footer-section-contact-info">
+        <div class="footer-section-contact-info text-animation">
             <p>
                 C/O Block No. 9<br>
                 Government Engineering College<br>
@@ -162,7 +184,7 @@
 
 
 
-    <div class="footer-bottom">
+    <div class="footer-bottom text-animation">
         <p>&copy; Copyright 2024 Indian Institute of Information Technology Vadodara - All Rights Reserved</p>
         <div class="footer-social">
             <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -172,6 +194,8 @@
     </div>
     
 </footer>
+
+<script src="../app.js"></script>
 
     
 </body>
