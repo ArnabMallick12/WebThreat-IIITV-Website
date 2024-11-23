@@ -11,7 +11,7 @@ body {
 
 /* Admission Banner */
 .admission-banner {
-    background: linear-gradient(45deg, #cc9b41, #d9a760);
+    background: linear-gradient(45deg, #f4ede4,black);
     padding: 120px 20px;
     text-align: center;
     color: #fff;

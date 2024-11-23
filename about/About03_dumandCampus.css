@@ -1,0 +1,135 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #0044cc, #007bff);
+    color: white;
+    transition: background-color 0.4s ease;
+}
+
+.hero-section:hover {
+    background: linear-gradient(to bottom, #002a80, #0056b3);
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.hero-section h1:hover {
+    transform: scale(1.05);
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.3em;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-section {
+    margin: 40px 0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.description-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.description-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.description-section h2 {
+    font-size: 2.5em;
+    color: #0044cc;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #0044cc;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.description-section h2:hover {
+    color: #007bff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.description-section p {
+    font-size: 1.1em;
+    text-align: justify;
+    color: #555;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+}
+
+.description-section p:hover {
+    color: #333;
+}
+
+.highlight {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.highlight:hover {
+    color: #0044cc;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .description-section h2 {
+        font-size: 1.8em;
+    }
+}

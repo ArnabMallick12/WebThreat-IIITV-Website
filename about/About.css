@@ -20,7 +20,6 @@
 }
 
 
-
 .main-content {
     display: flex;
     flex-direction: column;
@@ -42,19 +41,42 @@
     color: #fff;
 }
 
-.title h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
 
-.title h1 strong {
-    font-size: 3rem;
-    color: #e5e5e5;
-}
 
-.title h2 {
-    font-size: 1.5rem;
-}
+/* Styling for h1 with class "title" */
+h1.title {
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    font-size: 3rem; /* Adjust size as needed */
+    background: linear-gradient(45deg,black, black, black); /* Gradient colors */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; /* Gradient text effect */
+    text-align: center; /* Center align */
+    margin: 20px 0;
+    text-transform: uppercase; /* Capitalize */
+    letter-spacing: 5px; /* Adds spacing for elegance */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    animation: glow 2s infinite alternate; /* Glow effect */
+  }
+  
+  /* Add glow animation */
+  @keyframes glow {
+    0% {
+      text-shadow: 2px 2px 8px rgba(255, 107, 107, 0.8), 
+                   4px 4px 12px rgba(255, 217, 59, 0.5), 
+                   0px 0px 20px rgba(106, 124, 255, 0.7);
+    }
+    100% {
+      text-shadow: 2px 2px 12px rgba(255, 217, 59, 0.8), 
+                   4px 4px 18px rgba(106, 124, 255, 0.5), 
+                   0px 0px 25px rgba(255, 107, 107, 0.7);
+    }
+  }
+  
+
+
+
+
+
 
 /* Information Blocks Container */
 .info-container {
@@ -77,21 +99,51 @@
     transform: translateY(-5px);
 }
 
-.undergraduate {
+.institute {
     background-color: #a4cf25;
 }
 
-.graduate {
+.vision {
     background-color: #00b0b9;
 }
 
-.research {
+.director {
     background-color: #f39200;
 }
 
-.global {
+.governance {
     background-color: #d85d2a;
 }
+
+.act {
+    background-color: brown;
+}
+
+.statement {
+    background-color: violet ;
+}
+
+.annual {
+    background-color:green ;
+}
+
+.dumad {
+    background-color:goldenrod ;
+}
+
+.FAQ {
+    background-color: purple;
+}
+
+.policies {
+    background-color:pink ;
+}
+
+
+
+
+
+
 
 .info-block h3 {
     font-size: 1.2rem;

@@ -1,0 +1,109 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+
+
+
+
+.heading {
+    text-align: center;
+    background: linear-gradient(45deg, #2f2e2c,#2f2e2c);
+    color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.heading p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Job Section */
+.job-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.job-category {
+    margin-bottom: 2rem;
+}
+
+.job-category h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: darkblue;
+    border-left: 5px solid #66ccff;
+    padding-left: 1rem;
+}
+
+.job-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.job-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.job-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.job-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.apply-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #2f2e2c;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.apply-btn:hover {
+    background: #2f2e2c;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
