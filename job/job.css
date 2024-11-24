@@ -17,8 +17,8 @@ body {
 
 .heading {
     text-align: center;
-    background: linear-gradient(45deg, #2f2e2c,#2f2e2c);
-    color: white;
+    background: linear-gradient(45deg,#bb9651 0%, #d9a760 100%);
+    color: black;
     padding: 2rem 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -47,7 +47,7 @@ body {
 .job-category h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: darkblue;
+    color: #e2b054;
     border-left: 5px solid #66ccff;
     padding-left: 1rem;
 }
@@ -86,15 +86,17 @@ body {
 .apply-btn {
     display: inline-block;
     text-decoration: none;
-    background: #2f2e2c;
-    color: white;
+    background: #e2b054;
+    color: black;
     padding: 0.8rem 1.2rem;
     border-radius: 5px;
     transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
 }
 
 .apply-btn:hover {
     background: #2f2e2c;
+    color: white;
     transform: scale(1.05);
 }
 
