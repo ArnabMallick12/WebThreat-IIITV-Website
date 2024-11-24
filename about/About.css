@@ -25,45 +25,60 @@
     flex-direction: column;
     align-items: center;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 0px;
 }
 
 /* Background Image and Title */
-.background-image {
+/* .background-image {
     position: relative;
     width: 100%;
     height: 300px;
-    background: url('your-background-image.jpg') center/cover no-repeat;
-    display: flex;
+    /* background: url('your-background-image.jpg') center/cover no-repeat; */
+    /* display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
-}
+} */ 
 
 
 
 /* Styling for h1 with class "title" */
 .section-heading {
-    background-color: #f4e1b2; /* Light golden background */
-    text-align: center;
-    padding: 60px 20px; /* Add top and bottom padding */
-    border-radius: 10px; /* Round the corners of the section */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    background-image: url('../gallery/institue_img.jpeg'); /* Replace with the correct path to your image */
+    background-size:cover; /* Adjusts the image to cover the entire heading */
+    background-position: center; /* Centers the image */
+    color: white; /* Ensures text is visible on the background */
+    padding: 20px; 
+    text-align: center; /* Aligns text to the center */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    object-fit: cover;
+    width: 100%;
+    height: 30em;
 }
+.section-heading img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    mix-blend-mode:lighten;
+    filter: invert(1);
 
+}
 .section-heading h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
    font-size: 60px;  /* Large heading */
     font-family: 'Georgia', serif; /* Elegant serif font */
     font-weight: bold; /* Bold text */
-    color: #2e2a2a; /* Dark color for the heading */
+    color: #ffffff; /* Dark color for the heading */
     margin: 0;
 }
 
 .section-heading p {
     font-size: 18px;
     font-family: 'Arial', sans-serif;
-    color: #4d4b4b; /* Slightly lighter color for the description */
+    color: #ffffff; /* Slightly lighter color for the description */
     margin-top: 20px;
     font-weight: 300;
     line-height: 1.6;
@@ -85,7 +100,7 @@
 
 /* Base styling for each info block */
 .info-block {
-    background: linear-gradient(to right, #cfb991, #000000); /* Green to Black gradient */
+    background: linear-gradient(to right, #e3bc74, #b18637); /* Green to Black gradient */
     color: white; /* White text */
     padding: 20px;
     border-radius: 15px; /* Rounded corners */
@@ -95,9 +110,14 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
+
 .info-block:hover {
     transform: translateY(-5px); /* Slight hover movement */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.info-block a{
+    text-decoration: none;
 }
 
 /* Heading styling */
@@ -106,10 +126,11 @@
     font-weight: bold; /* Bold text */
     margin-bottom: 15px; /* Space below the heading */
     text-transform: uppercase; /* Uppercase text */
+    
 }
 
 .info-block .cta {
-    color: #fff; /* White color for the CTA text */
+    color: #000000; /* White color for the CTA text */
     font-weight: normal; /* Lighter weight for CTA text */
     text-decoration: none; /* No underline */
     transition: color 0.3s ease; /* Smooth hover color change */
@@ -125,6 +146,7 @@
     line-height: 1.6; /* Line height for better readability */
     font-weight: 300; /* Lighter font weight */
     margin-bottom: 0;
+    color: #000000;
 }
 
 /* Media query for smaller screens */

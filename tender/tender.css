@@ -16,9 +16,9 @@ body {
 
 
 /* Container Styles */
-.container {
+.container-tender {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 5em auto;
     padding: 20px;
     background: #cfb991;
     border-radius: 10px;
@@ -43,6 +43,7 @@ h1 i {
     border-collapse: collapse;
     overflow: hidden;
     border-radius: 8px;
+    background-color: white;
 }
 
 .tender-table th,

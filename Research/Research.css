@@ -10,13 +10,14 @@ body {
   position: relative;
   width: 100%;
   height: 400px; /* You can adjust the height as needed */
-  background-image: url('imp.png'); /* Replace 'imp.png' with your actual image file */
+  background-image: url('../gallery/resarch2.jpg'); /* Replace 'imp.png' with your actual image file */
   background-size: cover; /* Makes the image cover the entire container */
   background-position: center; /* Centers the image */
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease; /* Smooth transition for hover effects */
+  margin-bottom: 2em;
 }
 
 /* Hover effect on container */
@@ -26,7 +27,7 @@ body {
 
 /* Styling for the heading */
 .research-heading {
-  color: rgb(5, 16, 68);
+  color: rgb(255, 255, 255);
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
