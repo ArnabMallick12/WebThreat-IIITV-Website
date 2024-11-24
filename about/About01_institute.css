@@ -6,7 +6,7 @@ body {
     background-color: #f9f9f9;
 }
 
-.container {
+.container_ins {
     display: flex;
     flex-direction: column;
     align-items: center;

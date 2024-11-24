@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -16,7 +16,7 @@ body {
 .hero-section {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(to bottom, #0044cc, #007bff);
+    background: linear-gradient(to bottom, darkblue, darkblue);
     color: white;
     transition: background-color 0.4s ease;
 }

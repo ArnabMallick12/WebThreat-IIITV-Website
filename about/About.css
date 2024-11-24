@@ -44,99 +44,135 @@
 
 
 /* Styling for h1 with class "title" */
-h1.title {
-    font-family: 'Poppins', sans-serif; /* Modern, clean font */
-    font-size: 3rem; /* Adjust size as needed */
-    background: linear-gradient(45deg,black, black, black); /* Gradient colors */
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; /* Gradient text effect */
-    text-align: center; /* Center align */
-    margin: 20px 0;
-    text-transform: uppercase; /* Capitalize */
-    letter-spacing: 5px; /* Adds spacing for elegance */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    animation: glow 2s infinite alternate; /* Glow effect */
-  }
-  
-  /* Add glow animation */
-  @keyframes glow {
-    0% {
-      text-shadow: 2px 2px 8px rgba(255, 107, 107, 0.8), 
-                   4px 4px 12px rgba(255, 217, 59, 0.5), 
-                   0px 0px 20px rgba(106, 124, 255, 0.7);
-    }
-    100% {
-      text-shadow: 2px 2px 12px rgba(255, 217, 59, 0.8), 
-                   4px 4px 18px rgba(106, 124, 255, 0.5), 
-                   0px 0px 25px rgba(255, 107, 107, 0.7);
-    }
-  }
-  
-
-
-
-
-
-
-/* Information Blocks Container */
-.info-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 80%;
-    margin-top: -50px;
+.section-heading {
+    background-color: #f4e1b2; /* Light golden background */
+    text-align: center;
+    padding: 60px 20px; /* Add top and bottom padding */
+    border-radius: 10px; /* Round the corners of the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
+.section-heading h1 {
+   font-size: 60px;  /* Large heading */
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    font-weight: bold; /* Bold text */
+    color: #2e2a2a; /* Dark color for the heading */
+    margin: 0;
+}
+
+.section-heading p {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    color: #4d4b4b; /* Slightly lighter color for the description */
+    margin-top: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+
+
+
+/* Gradient Background Styling for Info Block */
+/* Gradient Background Styling for Info Block */
+/* Container for all info blocks */
+.info-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows the blocks to wrap on smaller screens */
+    gap: 20px; /* Space between the blocks */
+    padding: 20px; /* Padding around the container */
+    justify-content: space-between; /* Even space distribution */
+}
+
+/* Base styling for each info block */
 .info-block {
+    background: linear-gradient(to right, #cfb991, #000000); /* Green to Black gradient */
+    color: white; /* White text */
     padding: 20px;
-    border-radius: 8px;
-    color: #fff;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    border-radius: 15px; /* Rounded corners */
+    flex: 1 1 30%; /* Flexible block size, 30% width */
+    min-width: 300px; /* Minimum width for each block */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
 .info-block:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Slight hover movement */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
+
+/* Heading styling */
+.info-block h3 {
+    font-size: 22px; /* Heading font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 15px; /* Space below the heading */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+.info-block .cta {
+    color: #fff; /* White color for the CTA text */
+    font-weight: normal; /* Lighter weight for CTA text */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease; /* Smooth hover color change */
+}
+
+.info-block .cta:hover {
+    color: black; /* Hover color for CTA */
+}
+
+/* Paragraph styling */
+.info-block p {
+    font-size: 16px; /* Paragraph font size */
+    line-height: 1.6; /* Line height for better readability */
+    font-weight: 300; /* Lighter font weight */
+    margin-bottom: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .info-block {
+        flex: 1 1 100%; /* Full width for each block on smaller screens */
+    }
+}
+
 
 .institute {
-    background-color: #a4cf25;
-}
-
-.vision {
-    background-color: #00b0b9;
-}
+    background-color: #013220;
+} */
 
 .director {
-    background-color: #f39200;
-}
-
-.governance {
-    background-color: #d85d2a;
-}
-
-.act {
-    background-color: brown;
-}
-
-.statement {
-    background-color: violet ;
-}
-
-.annual {
-    background-color:green ;
+    background-color: #000000;
 }
 
 .dumad {
-    background-color:goldenrod ;
+    background-color:black ;
+}
+
+.vision {
+    background-color: #013220;
+}
+
+.governance {
+    background-color: #013220;
+}
+
+.act {
+    background-color: black;
+}
+
+.statement {
+    background-color: black ;
+}
+
+.annual {
+    background-color:#013220;
 }
 
 .FAQ {
-    background-color: purple;
+    background-color: #013220;
 }
 
 .policies {
-    background-color:pink ;
+    background-color:black ;
 }
 
 
