@@ -454,7 +454,7 @@ font-weight: bold;
 
 @media screen and (max-width: 500px){
   .container{
-    height: 55vh;
+    height: 60vh;
   }
 }
 @media screen and (min-width: 500px){
