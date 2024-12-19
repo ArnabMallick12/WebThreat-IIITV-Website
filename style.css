@@ -459,12 +459,12 @@ font-weight: bold;
 }
 @media screen and (min-width: 500px){
   .container{
-    height: 50vh;
+    height: 65vh;
   }
 }
 @media screen and (min-width: 1000px){
   .container{
-    height: 65vh;
+    height: 70vh;
   }
 }
 @media screen and (min-width: 2500px){
