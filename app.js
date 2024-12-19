@@ -1,3 +1,9 @@
+document.querySelector(".hamburger-menu").addEventListener("click", function () {
+  const navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("open");
+});
+
+
 // <!-- dropdown of diu and Convocation -->
 
         // Toggle dropdown visibility on button click
@@ -26,7 +32,7 @@
 /*=============== SWIPER JS ===============*/
 let swiperCards_ln = new Swiper(".card__content_ln", {
     loop: true,
-    spaceBetween: 32,
+    spaceBetween: 50,
     grabCursor: true,
   
     pagination: {
@@ -43,9 +49,11 @@ let swiperCards_ln = new Swiper(".card__content_ln", {
     breakpoints:{
       600: {
         slidesPerView: 2,
+        spaceBetween: 50,
       },
-      968: {
+      1100: {
         slidesPerView: 3,
+        spaceBetween : 32,
       },
     },
   });
@@ -71,9 +79,11 @@ let swiperCards_ec = new Swiper(".card__content_ec", {
     breakpoints:{
       600: {
         slidesPerView: 2,
+        spaceBetween: 50,
       },
-      968: {
+      1100: {
         slidesPerView: 3,
+        spaceBetween : 32,
       },
     },
   });
@@ -99,9 +109,11 @@ let swiperCards_rh = new Swiper(".card__content_rh", {
     breakpoints:{
       600: {
         slidesPerView: 2,
+        spaceBetween: 50,
       },
-      968: {
+      1100: {
         slidesPerView: 3,
+        spaceBetween : 32,
       },
     },
   });

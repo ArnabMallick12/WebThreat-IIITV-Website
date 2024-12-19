@@ -127,8 +127,14 @@ body {
     max-width: 1200px;
 }
 
+@media screen and (max-width: 650px){
+    .info-container{
+        display: block;
+    }
+}
+
 .info-column {
-    width: 48%;
+    width: 100%;
 }
 
 /* Info Cards */
